@@ -36,7 +36,7 @@ def detect_lines(
         minLineLength=min_line_length,
         maxLineGap=max_line_gap,
     )
-    return lines
+    return lines if lines is not None else []
 
 
 def draw_lines(img: np.ndarray, lines: np.ndarray, color: tuple = (0, 255, 0)):
@@ -49,9 +49,11 @@ def draw_lines(img: np.ndarray, lines: np.ndarray, color: tuple = (0, 255, 0)):
             color (tuple): The color of the lines. Default: (0, 255, 0)
     """
 
-    for line in lines:
-        x1, y1, x2, y2 = line[0]
-        cv2.line(img, (x1, y1), (x2, y2), color, 2)
+    if lines is not None and len(lines):
+        for line in lines:
+            x1, y1, x2, y2 = line[0]
+            cv2.line(img, (x1, y1), (x2, y2), color, 2)
+    return img
 
 
 def get_slopes_intercepts(lines: np.ndarray):

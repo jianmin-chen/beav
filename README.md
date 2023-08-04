@@ -1,7 +1,3 @@
-* Debug sockets to get it working
-* Finish faceterm
-* 
-
 Here's a recap of everything we did in [BWSI AUV](https://blksail-edu.github.io/), in general but no particular order:
 
 * Fundamentals of Python & C++
