@@ -10,11 +10,11 @@ Afterwards, we were subjected to building our own chat servers. Here's a walkthr
 
 - [X] The server should be able to handle multiple clients at once.
 - [X] The server should broadcast messages to all clients.
-- [ ] The server should send a message to the chatroom when a new client joins the chat room.
+- [X] The server should send a message to the chatroom when a new client joins the chat room.
 - [X] The server should send a message to the chatroom when a client leaves the chat room.
 - [X] The client should be able to send messages to the server.
-- [ ] The client should be able to receive messages from the server.
-- [ ] The client should be able to gracefully exit the chat room.
+- [X] The client should be able to receive messages from the server.
+- [X] The client should be able to gracefully exit the chat room.
 - [X] The client should have a username, which is sent to the server when the client joins the chat room.
 - [X] The server should keep track of all clients in the chat room.
 - [X] The client is defined by:

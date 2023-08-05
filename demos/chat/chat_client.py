@@ -3,7 +3,7 @@ from sys import argv, exit
 from client import Client
 from colors import Colors
 
-host = "10.29.83.169"
+host = "10.29.208.145"
 port = 5000
 
 
